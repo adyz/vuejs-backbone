@@ -14,7 +14,12 @@ module.exports = {
         filename: '[name].bundle.js',
         chunkFilename: "[id].bundle.[hash].js",
         publicPath: "./dist/js/" //The root being the static folder created from express
-    }
+    },
+    resolve: {
+	  alias: {
+	    vue: 'vue/dist/vue.js'
+	  }
+	}
 
 
 }	
